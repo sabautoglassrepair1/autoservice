@@ -1,0 +1,190 @@
+/* =====================
+   RESET & GLOBAL
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* =====================
+   CONTAINER (FOR FORMS)
+===================== */
+.container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   HEADINGS
+===================== */
+h1,
+h2 {
+    text-align: center;
+    color: #1f3c88;
+    margin-bottom: 20px;
+}
+
+/* =====================
+   INPUTS & SELECT
+===================== */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #1f3c88;
+    box-shadow: 0 0 5px rgba(31, 60, 136, 0.3);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1f3c88;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #162b5a;
+}
+
+/* =====================
+   LINKS
+===================== */
+a {
+    color: #1f3c88;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   PRICE DISPLAY
+===================== */
+#price {
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* =====================
+   CARD (TRACK + ADMIN)
+===================== */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================
+   ADMIN DASHBOARD
+===================== */
+.admin-layout {
+    display: flex;
+    min-height: 50vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: #1f3c88;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar button {
+    background: white;
+    color: #1f3c88;
+    margin-bottom: 10px;
+}
+
+/* MAIN AREA */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* TOPBAR */
+.topbar {
+    margin-bottom: 20px;
+}
+
+/* SECTIONS */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* STATS CARDS */
+.stats {
+    display: flex;
+    gap: 15px;
+}
+
+.stats .card {
+    flex: 1;
+    text-align: center;
+}
+
+/* BOOKINGS LIST */
+#bookings .card {
+    margin-top: 10px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}

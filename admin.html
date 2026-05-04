@@ -1,0 +1,31 @@
+<body>
+
+    <div class="admin-center">
+
+        <header>
+            <h1>Admin Dashboard</h1>
+            <p>Manage Bookings</p>
+        </header>
+
+        <div class="btn-center">
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div id="bookings"></div>
+
+        <footer>
+            <p>Auto Service Booking System</p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="admin.js"></script>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("admin");
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Auto Service Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>🚗 Auto Service Booking</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <select id="service" required>
+                <option value="">-- Select Service --</option>
+                <option>Windscreen Repair</option>
+                <option>Crack Repair</option>
+                <option>Oil Change</option>
+            </select>
+
+            <p id="price" style="font-weight: bold;"></p>
+
+            <input type="date" id="date" required>
+
+            <input type="time" id="time" required>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+
+        <div style="text-align:center; margin-top:20px;">
+            <a href="track.html">🔍 Track Service</a> |
+            <a href="login.html">🔐 Admin Login</a>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
