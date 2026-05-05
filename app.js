@@ -33,14 +33,6 @@ function showBrowserNotification(booking) {
         });
     }
 }
-
-function getPrice(service) {
-    if (service === "Windscreen Repair") return 15000;
-    if (service === "Crack Repair") return 8000;
-    if (service === "Oil Change") return 5000;
-    return 0;
-}
-
 serviceSelect.addEventListener("change", function () {
     if (!this.value) {
         priceDisplay.innerText = "";
